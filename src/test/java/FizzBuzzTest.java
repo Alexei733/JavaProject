@@ -48,7 +48,7 @@ public class FizzBuzzTest {
 
 
     @Test   // рабочий тест отключен.
-    // специальная аннотация для отключения тестов как рабочих, так и не доделанных до конца.
+    @Ignore // специальная аннотация для отключения тестов как рабочих, так и не доделанных до конца.
     public void testStartLessThanEnd_StartEndNegative_HappyPath() {
         //AAA
         //arange
@@ -77,7 +77,7 @@ public class FizzBuzzTest {
         //arrange
         int start = 20;
         int end = 1;
-        String[] epectedResult = {};
+        String[] epectedResult = {"1"};
 
         //act
         String[] actualResult = new FizzBuzz().fizzBuzz(start, end);
