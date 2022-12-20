@@ -77,7 +77,7 @@ public class FizzBuzzTest {
         //arrange
         int start = 20;
         int end = 1;
-        String[] epectedResult = {"1"};
+        String[] epectedResult = {};
 
         //act
         String[] actualResult = new FizzBuzz().fizzBuzz(start, end);
